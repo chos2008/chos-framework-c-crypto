@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCActiveXControl1", "MFCActiveXControl1\MFCActiveXControl1.vcxproj", "{0B022F93-02CD-4FB0-B5B2-7C05C3FD71E3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openssl-test", "openssl-test\openssl-test.vcxproj", "{8B876B89-22BD-4872-BB24-FA3BD390EDFA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "win32-test", "win32-test\win32-test.vcxproj", "{2B83D576-1A28-44D1-8921-F29DEB461F54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B022F93-02CD-4FB0-B5B2-7C05C3FD71E3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0B022F93-02CD-4FB0-B5B2-7C05C3FD71E3}.Debug|Win32.Build.0 = Debug|Win32
+		{0B022F93-02CD-4FB0-B5B2-7C05C3FD71E3}.Release|Win32.ActiveCfg = Release|Win32
+		{0B022F93-02CD-4FB0-B5B2-7C05C3FD71E3}.Release|Win32.Build.0 = Release|Win32
+		{8B876B89-22BD-4872-BB24-FA3BD390EDFA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8B876B89-22BD-4872-BB24-FA3BD390EDFA}.Debug|Win32.Build.0 = Debug|Win32
+		{8B876B89-22BD-4872-BB24-FA3BD390EDFA}.Release|Win32.ActiveCfg = Release|Win32
+		{8B876B89-22BD-4872-BB24-FA3BD390EDFA}.Release|Win32.Build.0 = Release|Win32
+		{2B83D576-1A28-44D1-8921-F29DEB461F54}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2B83D576-1A28-44D1-8921-F29DEB461F54}.Debug|Win32.Build.0 = Debug|Win32
+		{2B83D576-1A28-44D1-8921-F29DEB461F54}.Release|Win32.ActiveCfg = Release|Win32
+		{2B83D576-1A28-44D1-8921-F29DEB461F54}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

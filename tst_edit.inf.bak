@@ -1,0 +1,92 @@
+; INF file for tst_edit.cab 
+
+[version] 
+
+signature="$CHICAGO$" 
+
+AdvancedINF=2.0 
+
+; 以上部分不要修改
+
+ 
+
+ 
+
+[Add.Code] 
+
+MFCActiveXControl1.ocx= MFCActiveXControl1.ocx
+
+; DllDeinterlace.dll= DllDeinterlace.dll 
+
+msvcp110.dll= msvcp110.dll
+
+ 
+
+ 
+
+ 
+
+[MFCActiveXControl1.ocx] 
+
+file-win32-x86=thiscab 
+
+clsid={AC69DFDB-D959-4B9A-9F30-8A2160051C12} 
+
+DestDir=11 
+
+FileVersion=1,0,0,1 
+
+RegisterServer=yes 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+; [DllDeinterlace.dll] 
+
+; file-win32-x86=thiscab 
+
+; DestDir=11 
+
+; FileVersion=1,1,0,3 
+
+; RegisterServer=yes 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+[msvcp110.dll] 
+
+file-win32-x86=thiscab 
+
+DestDir=11 
+
+FileVersion= 8,0,50727,762 
+
+RegisterServer=yes 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+; end of INF file 
+

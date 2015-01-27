@@ -1,0 +1,21 @@
+﻿生成启动时间为 2015/1/25 22:31:23。
+     1>项目“D:\home\workspace1\tst_edit\MFCActiveXControl1\win32-test\win32-test.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\win32-test.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\win32-test.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt encrypt.cpp "rsa-win32.cpp" "win32-test.cpp"
+         win32-test.cpp
+         rsa-win32.cpp
+         encrypt.cpp
+         正在生成代码...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\home\workspace1\tst_edit\MFCActiveXControl1\Debug\win32-test.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\home\workspace1\tst_edit\MFCActiveXControl1\Debug\win32-test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\home\workspace1\tst_edit\MFCActiveXControl1\Debug\win32-test.lib" /MACHINE:X86 Debug\encrypt.obj
+         "Debug\rsa-win32.obj"
+         Debug\stdafx.obj
+         "Debug\win32-test.obj"
+         win32-test.vcxproj -> D:\home\workspace1\tst_edit\MFCActiveXControl1\Debug\win32-test.exe
+     1>已完成生成项目“D:\home\workspace1\tst_edit\MFCActiveXControl1\win32-test\win32-test.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:08.26

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+<script type="text/javascript">
+
+function att_password() {
+	var obj = document.getElementById('MyActiveX1');
+	alert(obj._GetPassword());
+}
+
+function Att_Version() {
+	var obj = document.getElementById('MyActiveX1');
+	alert(obj._GetVersion());
+}
+
+function show_value() {
+	var obj = document.getElementById('MyActiveX1');
+	alert(obj.value());
+}
+
+function _encrypt() {
+	var obj = document.getElementById('MyActiveX1');
+	var tips = document.getElementById('t_password');
+	var password = "jx.vovo.11-28";
+	tips.innerHTML = password;
+	var en_password = obj.encode(password);
+	alert(en_password);
+}
+
+function _decrypt() {
+	var obj = document.getElementById('MyActiveX1');
+	var tips = document.getElementById('t_password');
+	var password = "jx.vovo.11-28";
+	tips.innerHTML = password;
+	var en_password = obj.encode(password);
+	alert(en_password);
+}
+
+function _about() {
+	var obj = document.getElementById('MyActiveX1');
+	obj.AboutBox();
+}
+</script>
+
+<SCRIPT type="text/javascript" FOR="MyActiveX1" EVENT="Ev_Init(status)" >
+   alert("Ev_Init");
+   alert(status);
+</SCRIPT> 
+</head>
+<body>
+<center>Samples</center>
+<hr>
+<center>1号店（WWW.YHD.COM）密码安全控件 1.0 版</center>
+<hr>
+<form>
+<div style="height: 50px; line-height: 50px; border: 1px solid black; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; position: relative;">
+<label style="height: 50px; line-height: 50px; width: 100px; border: 1px solid red; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; display: inline-block; ">用户名：</label>
+<input type="text" name="username" style="width: 180px; border: 1px solid silver;"/>
+</div>
+<div style="height: 150px; line-height: 150px; border: 1px solid black; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; position: relative;">
+<label style="height:150px; line-height: 150px; width: 100px; border: 1px solid red; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; display: inline-block; ">密码：</label>
+<OBJECT ID="MyActiveX1" CLASSID="CLSID:ceb620a2-3b64-4247-a971-49c708c51ebf" width="180" height="24" style="height: 24px; width: 180px; border: 1px solid silver; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;">
+	<PARAM NAME="Version" VALUE="1.0">
+    <!--
+    <PARAM NAME="_Version" VALUE="65536">
+    <PARAM NAME="_ExtentX" VALUE="2646">
+	-->
+    <PARAM NAME="password" VALUE="v_password">
+	
+</OBJECT>
+<span id="t_password"></span>
+</div>
+<div style="height: 50px; line-height: 50px; text-align: center; border: 1px solid black; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;">
+<input id="value" type="button" value="登录" onclick="javascript: _decrypt();"/>
+</div>
+
+
+<div style="height: 150px; line-height: 150px; border: 1px solid black; margin: 10px 0px 0px 0px; padding: 0px 0px 0px 0px; position: relative;">
+<span id="t_en_password"></span>
+<span id="t_de_password"></span>
+<input id="value" type="button" value="属性（Version）" onclick="javascript: Att_Version();"/>
+<input id="value" type="button" value="属性（password）" onclick="javascript: att_password();"/>
+<input id="value" type="button" value="显示密码" onclick="javascript: show_value();"/>
+<input id="value" type="button" value="encrypt" onclick="javascript: _encrypt();"/>
+<input id="value" type="button" value="decrypt" onclick="javascript: _decrypt();"/>
+
+</div>
+</form>
+
+<p>
+makecert.exe -sv ocx.yhd.com.pvk -r -n "CN=www.yhd.com" ocx.yhd.com.cer
+
+CABARC.EXE -s 6144 N tst_edit.cab msvcp110.dll MFCActiveXControl1.ocx tst_edit.inf
+
+chktrust.exe tst_edit.cab
+
+openssl genrsa -out D:\home\workspace1\tst_edit\test.key 1024
+
+openssl rsa -in test.key -pubout -out test_pub.key
+
+openssl rsautl -encrypt -in D:\home\workspace1\tst_edit\MFCActiveXControl1\明文.txt  -inkey D:\home\workspace1\tst_edit\MFCActiveXControl1\test_pub.key -pubin -out  D:\home\workspace1\tst_edit\MFCActiveXControl1\密文.txt
+
+
+openssl rsautl -decrypt -in D:\home\workspace1\tst_edit\MFCActiveXControl1\密文.txt -inkey D:\home\workspace1\tst_edit\MFCActiveXControl1\test.key -out D:\home\workspace1\tst_edit\MFCActiveXControl1\明文.de.txt
+
+openssl genpkey -algorithm RSA -out yhd.genpkey.key
+openssl rsa -in yhd.genpkey.key -pubout -out yhd.genpkey_pub.key
+
+openssl genpkey -algorithm RSA -out yhd.genpkey.pem.key -outform PEM
+</p>
+<p style="text-align: center;">
+<a href="javascript: _about(0);">About</a>
+</p>
+</body>
+<script type="text/javascript">
+var obj = document.getElementById('MyActiveX1');
+//alert(obj.CLASSID);
+//alert(obj.getAttribute('CLASSID'));
+setTimeout("init()", 3000);
+function init() {
+	obj.AddFun(12,13);
+}
+
+</script>
+</html>

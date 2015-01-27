@@ -1,0 +1,43 @@
+﻿生成启动时间为 2015/1/23 23:04:52。
+     1>项目“D:\home\workspace1\tst_edit\MFCActiveXControl1\MFCActiveXControl1\MFCActiveXControl1.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>Midl:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\midl.exe /D _DEBUG /W1 /nologo /char signed /env win32 /h "MFCActiveXControl1idl.h" /tlb "Debug\MFCActiveXControl1.tlb" /robust MFCActiveXControl1.idl 
+         Processing .\MFCActiveXControl1.idl
+         MFCActiveXControl1.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.0\Include\um\oaidl.idl
+         oaidl.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.0\Include\um\objidl.idl
+         objidl.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.0\Include\um\unknwn.idl
+         unknwn.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.0\Include\shared\wtypes.idl
+         wtypes.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.0\Include\shared\wtypesbase.idl
+         wtypesbase.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.0\Include\shared\basetsd.h
+         basetsd.h
+         Processing C:\Program Files (x86)\Windows Kits\8.0\Include\shared\guiddef.h
+         guiddef.h
+         Processing C:\Program Files (x86)\Windows Kits\8.0\Include\um\oaidl.acf
+         oaidl.acf
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\MFCActiveXControl1.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\MFCActiveXControl1.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Cathelp.cpp CCrypt.cpp CCryptW.cpp CPasswordEdit.cpp MFCActiveXControl1.cpp TSTPasswordCtrl.cpp TSTPasswordPropPage.cpp
+         TSTPasswordPropPage.cpp
+         TSTPasswordCtrl.cpp
+     1>d:\home\workspace1\tst_edit\mfcactivexcontrol1\mfcactivexcontrol1\tstpasswordctrl.cpp(390): warning C4101: “uInt”: 未引用的局部变量
+         MFCActiveXControl1.cpp
+         CPasswordEdit.cpp
+         CCryptW.cpp
+     1>d:\home\workspace1\tst_edit\mfcactivexcontrol1\mfcactivexcontrol1\ccryptw.cpp(8): warning C4627: “#include "CCryptW.h"”: 在查找预编译头使用时跳过
+                 将指令添加到“stdafx.h”或重新生成预编译头
+     1>d:\home\workspace1\tst_edit\mfcactivexcontrol1\mfcactivexcontrol1\ccryptw.cpp(102): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+         CCrypt.cpp
+         Cathelp.cpp
+         正在生成代码...
+     1>已完成生成项目“D:\home\workspace1\tst_edit\MFCActiveXControl1\MFCActiveXControl1\MFCActiveXControl1.vcxproj”(Rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:07.97

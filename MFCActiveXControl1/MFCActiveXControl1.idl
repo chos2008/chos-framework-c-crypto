@@ -1,0 +1,62 @@
+// MFCActiveXControl1.idl : ActiveX 控件项目的类型库源。
+
+// 此文件将由 MIDL 编译器工具处理以
+// 产生类型库(MFCActiveXControl1.tlb)，该类型库将成为
+// MFCActiveXControl1.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(1979A998-33B8-4C5D-926E-635A22D0C58E), version(1.0),
+  control ]
+library MFCActiveXControl1Lib
+{
+	importlib(STDOLE_TLB);
+
+	//  CTSTPasswordCtrl 的主调度接口
+	[ 
+		uuid(8888A2FD-974F-44BB-84E4-9F24F670FEA2)	
+	]
+	dispinterface _DMFCActiveXControl1
+	{
+		properties:
+			[id(3) ] BSTR password;
+			[id(6) ] BSTR Version;
+	methods:
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+			[id(1)] LONG AddFun(LONG num1, LONG num2);
+			
+			[id(2)] BSTR encode(BSTR password);
+			[id(4)] BSTR value(void);
+			[id(5)] BSTR _GetPassword(void);
+			[id(7)] BSTR _GetVersion(void);
+			[id(8)] BSTR _Encrypt(void);
+			[id(9)] BSTR _Decrypt(void);
+	};
+
+	//  CTSTPasswordCtrl 的事件调度接口
+
+	[ 
+		uuid(944EC20E-29AE-4B48-AE66-F532B3E50418)	
+	]
+	dispinterface _DMFCActiveXControl1Events
+	{
+		properties:
+			//  事件接口没有任何属性
+
+		methods:
+			[id(1)] void Ev_Init(LONG Status);
+	};
+
+	//  CTSTPasswordCtrl 的类信息
+	[
+		uuid(CEB620A2-3B64-4247-A971-49C708C51EBF)
+	]
+	coclass MFCActiveXControl1
+	{
+		[default] dispinterface _DMFCActiveXControl1;
+		[default, source] dispinterface _DMFCActiveXControl1Events;
+	};
+
+};
